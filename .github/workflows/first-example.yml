@@ -10,6 +10,4 @@ jobs:
       - name: list the files
         run: ls
       - name: read the file
-        run: cat README.md
-        
-        
+        run: cat varunraikar056/githubactions-new/README.md

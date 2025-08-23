@@ -6,8 +6,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: welcome message
-        run: echo "my first github actions job"
+        run: echo "my first github actions job" > report.txt
       - name: list the files
         run: ls
       - name: read the file
-        run: cat varunraikar056/githubactions-new/README.md
+        run: cat report.txt

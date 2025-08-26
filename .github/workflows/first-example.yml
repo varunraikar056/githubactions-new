@@ -5,9 +5,14 @@ jobs:
   first_job:
     runs-on: ubuntu-latest
     steps:
+      - name: checkout repo
+        uses: actions/checkout@v5
+
       - name: welcome message
         run: echo "my first github actions job" > report.txt
+
       - name: list the files
         run: ls
+        
       - name: read the file
         run: cat report.txt

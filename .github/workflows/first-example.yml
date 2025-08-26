@@ -16,5 +16,14 @@ jobs:
 
       - name: install and generate ascii artwork
         run: |
-          pip install cowsay -y
+          sudo apt-get install cowsay -y
           cowsay -f dragon "Beware of dragons!" >> dragon.txt
+
+      - name: test file exists
+        run: grep -i "dragon" dragon.txt
+
+      - name: read file
+        run: cat dragon.txt
+
+      - name: list repo files
+        run: ls -ltra

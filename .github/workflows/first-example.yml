@@ -14,5 +14,7 @@ jobs:
           ls -ltra
           cat report.txt
 
-      - name: generate ascii artwork
-        run: cowsay -f dragon "Beware of dragons!" >> dragon.txt
+      - name: install and generate ascii artwork
+        run: |
+          pip install cowsay
+          cowsay -f dragon "Beware of dragons!" >> dragon.txt

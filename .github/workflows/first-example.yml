@@ -16,5 +16,5 @@ jobs:
 
       - name: install and generate ascii artwork
         run: |
-          pip install cowsay
+          pip install cowsay -y
           cowsay -f dragon "Beware of dragons!" >> dragon.txt
